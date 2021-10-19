@@ -27,8 +27,8 @@ Table pedido  {
 Table pedido_itens {
   x5_id int [pk, increment] 
   x5_pedido int [ref: > pedido.x4_id]
-  x4_produto int [ref: > produto.x2_id]
-  x4_valor_unitario numeric(15,2)
+  x5_produto int [ref: > produto.x2_id]
+  x5_valor_unitario numeric(15,2)
   x5_quantidade int
 }
 
